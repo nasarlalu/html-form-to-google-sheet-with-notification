@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Sheet Integration</title>
+  </head>
+  <body>
+    <form
+      class="TheForm"
+      name="google-sheet"
+      id="enquire"
+      action="https://script.google.com/macros/s/AKfycbwFBdPE-8KJPd19KbDnsUvgt0fUNqMripU2prVtWTaHVtjJU7IMMtArRjzpp8krIk6Q/exec"
+    >
+      <input type="text" placeholder="Enter Your Name" required name="Name" />
+      <input
+        type="text"
+        placeholder="Enter Your Number"
+        required
+        name="Number"
+      />
+      <input type="text" placeholder="Enter Your Email" required name="Email" />
+
+      <input type="submit" />
+    </form>
+
+    <script>
+      const form = document.getElementById("enquire");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: "POST",
+          body: data,
+        })
+          .then((res) => {
+            console.log(res, "response");
+          })
+          .catch((e) => {
+            console.error(e, "errr"); // "oh, no!"
+          });
+      });
+    </script>
+  </body>
+</html>
