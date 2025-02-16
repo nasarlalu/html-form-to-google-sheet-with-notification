@@ -1,4 +1,4 @@
-# Save your Form Data in Google Sheet with Email Notification Integration.
+# Store your Form Data in Google Sheet with Email Notification Integration.
 
 This repository provides a comprehensive guide and code implementation for seamlessly sending form data to a Google Sheet and triggering email notifications upon the entry of new data. It's a powerful solution that streamlines data collection and enhances communication by automating the notification process.
 
@@ -18,12 +18,12 @@ This repository provides a comprehensive guide and code implementation for seaml
 
    - Go to Google Sheet and Create a new Sheet that serve as your data repository. This is where we'll store the form data.
    - Set the following headers in the first row:
-   - ![Header Example](images/workflow.png)
+   - ![Header Example](/assets/headers_example.png)
 
 2. **Create a Google App Script:**
 
    - Click on `Extensions -> Apps Script` This will open new Google Script. Rename it to your desired name. Ex: Form_Script".
-   - ![Extension Navigating](images/workflow.png)]
+   - ![Extension Navigating](/assets/appScript_example.png)]
 
    - here `Replace the myFunction() { ... section with the following code snippet`:
    -       // Original code from https://github.com/jamiewilson/form-to-google-sheets  
@@ -89,12 +89,12 @@ This repository provides a comprehensive guide and code implementation for seaml
 
 4. **Email Notification Setup:**
 
-   - Configure email notification triggers to notify relevant stakeholders upon new data entry.
+   - Configure email notification triggers to notify relevant admin upon new data entry.
+    ![Header Example](/assets/notificationTrigger_example.png)
    - Customize email content and recipients according to your preferences.
 
 5. **Security Considerations:**
    - Follow best practices to secure your form data and email notifications.
-   - Implement authentication, handle sensitive information securely, and enable SSL encryption.
 
 ## Examples
 
