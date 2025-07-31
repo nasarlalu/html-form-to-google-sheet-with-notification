@@ -84,17 +84,26 @@ This repository provides a comprehensive guide and code implementation for seaml
                lock.releaseLock();
                }
            }
-
+   - Quick Note: Customize email content and recipients according to your preferences.
 
 
 4. **Email Notification Setup:**
 
    - Configure email notification triggers to notify relevant admin upon new data entry.
     ![Header Example](/assets/notificationTrigger_example.png)
-   - Customize email content and recipients according to your preferences.
 
-5. **Security Considerations:**
-   - Follow best practices to secure your form data and email notifications.
+5. **Deploy the Script**
+   - Click the Deploy button at the top.
+      ![Header Example](/assets/deployButton_example.png)
+   - Select "Web App" under deployment type.
+   - Optionally, add a description for your deployment.
+   - Under Execute as, choose "Me (your email ID)".
+   - For Who has access, select "Anyone".
+
+6. **Copy the Web App URL**
+   - Once deployed, copy the Web App URL and store it securely.
+   - You'll use this URL in your application — refer to the example folders in the repo for implementation guidance.
+   - Important: Secure this URL to prevent unauthorized access.
 
 ## Examples
 
